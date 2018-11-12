@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.head-pic {
+  max-width: 180px;
+}
+
+.head-name {
+  margin: 5px 0;
+}
+
+.desc {
+  margin: 0;
+  color: #b5b5b5;
+  font-size: 16px;
+}
+
+.content-wrapper {
+  display:flex;
+  margin-top: 25vh;
+}  
+
+.content {
+  margin: auto;
+  width: 760px;
+  max-width: 760px;
+  text-align: center;
+  font-size: 55px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row; 
+  margin-top: 25vh;
+}
+
+.list-elem {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.list-elem:hover {
+  border-color: black;
+}
+
+@media screen and (max-width: 730px) {
+
+  .content-wrapper {
+    margin-top: 15vh;
+  }  
+
+  .content {
+    padding: 0 0.5em 0 0.5em;
+  }
+
+}
