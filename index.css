@@ -15,12 +15,20 @@ a {
   max-width: 180px;
 }
 
+.head-pic-small {
+  max-width: 60px;
+}
+
 .active {
   border-color: black!important;
 }
 
 .head-name {
   margin: 5px 0;
+}
+
+.head-name-small {
+  margin: 0;
 }
 
 .desc {
@@ -32,6 +40,11 @@ a {
 .content-wrapper {
   display:flex;
   margin-top: 25vh;
+}
+
+.content-wrapper-small {
+  display:flex;
+  margin-top: 5vh;
 }  
 
 .content {
@@ -40,7 +53,22 @@ a {
   max-width: 760px;
   text-align: center;
   font-size: 55px;
-  /* position: relative; */
+}
+
+.content-small {
+  margin: auto;
+  width: 760px;
+  max-width: 760px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.sticky {
+  position: absolute;
+  bottom: 2em;
+  left: 0;
+  width: 100%;
+  display: flex;
 }
 
 .list {
@@ -48,6 +76,15 @@ a {
   justify-content: space-between;
   flex-direction: row; 
   margin-top: 25vh;
+}
+
+.list-small {
+  display: flex;
+  width: 760px;
+  max-width: 760px;
+  justify-content: space-between;
+  flex-direction: row; 
+  margin: auto;
 }
 
 .list-elem {
@@ -63,9 +100,30 @@ a {
   border-color: black;
 }
 
+.list-elem-small {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.list-elem-small:hover {
+  border-color: black;
+}
+
 @media screen and (max-width: 730px) {
 
   .list {
+    position: absolute;
+    width: 100%;
+    bottom: 1.6vh;
+    left: 0;
+    background-color: white;
+  }
+
+  .list-small {
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -73,16 +131,41 @@ a {
     background-color: white;
   }
 
+  .sticky {
+    position: absolute;
+    bottom: 1.6vh;
+    left: 0;
+    width: 100%;
+    display: flex;
+  }
+
   .list-elem {
-    padding: 0.6em;
+    margin: 0 1.6vh;
+  }
+
+  .list-elem-small {
+    margin: 0 1.6vh;
+  }
+
+  .head-pic-small {
+    max-width: 60px;
   }
 
   .content-wrapper {
     margin-top: 15vh;
-  }  
+  }
+
+  .content-wrapper-small {
+    margin-top: 1vh;
+  }
 
   .content {
-    padding: 0 0.5em 0 0.5em;
+    padding: 0 0.5vh 0 0.5vh;
+  }
+
+  .content-small {
+    padding: 0 0.5vh 0 0.5vh;
+    font-size: 24px;
   }
 
 }
